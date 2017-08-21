@@ -1,10 +1,6 @@
 ---
 applications:
 - name: icpqa
-<<<<<<< HEAD
   host: icpqa 
-=======
-  host: icpqa
->>>>>>> gh-pages
   memory: 1024M
   instances: 2

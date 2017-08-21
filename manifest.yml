@@ -1,0 +1,6 @@
+---
+applications:
+- name: icpqa
+  host: icpqa 
+  memory: 1024M
+  instances: 2

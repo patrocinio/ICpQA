@@ -1,0 +1,365 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Backup & Restore Bluemix Dedicated Documentation</title>
+
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight, .highlight .w {
+  color: #f8f8f2;
+  background-color: #272822;
+}
+.highlight .err {
+  color: #151515;
+  background-color: #ac4142;
+}
+.highlight .c, .highlight .cd, .highlight .cm, .highlight .c1, .highlight .cs {
+  color: #505050;
+}
+.highlight .cp {
+  color: #f4bf75;
+}
+.highlight .nt {
+  color: #f4bf75;
+}
+.highlight .o, .highlight .ow {
+  color: #d0d0d0;
+}
+.highlight .p, .highlight .pi {
+  color: #d0d0d0;
+}
+.highlight .gi {
+  color: #90a959;
+}
+.highlight .gd {
+  color: #ac4142;
+}
+.highlight .gh {
+  color: #6a9fb5;
+  background-color: #151515;
+  font-weight: bold;
+}
+.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
+  color: #aa759f;
+}
+.highlight .kc {
+  color: #d28445;
+}
+.highlight .kt {
+  color: #d28445;
+}
+.highlight .kd {
+  color: #d28445;
+}
+.highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
+  color: #90a959;
+}
+.highlight .sr {
+  color: #75b5aa;
+}
+.highlight .si {
+  color: #8f5536;
+}
+.highlight .se {
+  color: #8f5536;
+}
+.highlight .nn {
+  color: #f4bf75;
+}
+.highlight .nc {
+  color: #f4bf75;
+}
+.highlight .no {
+  color: #f4bf75;
+}
+.highlight .na {
+  color: #6a9fb5;
+}
+.highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mb, .highlight .mx {
+  color: #90a959;
+}
+.highlight .ss {
+  color: #90a959;
+}
+    </style>
+    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all.js"></script>
+  </head>
+
+  <body class="index" data-languages="[&quot;javascript&quot;,&quot;java&quot;]">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar.png" />
+      </span>
+    </a>
+    <div class="tocify-wrapper">
+      <img src="images/logo.png" />
+        <div class="lang-selector">
+              <a href="#" data-language-name="javascript">Node</a>
+              <a href="#" data-language-name="java">Java</a>
+        </div>
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <div id="toc">
+      </div>
+    </div>
+    <div class="page-wrapper">
+        <div id="expand-collapse-code" role="complementary" aria-label="expand-collapse-code">
+          <button class="showHideButton" id="hideCodeButton" title="hide code column"><label for="hideCodeButton">&nbsp;</label></button>
+          <button class="showHideButton" id="showCodeButton" title="show code column"><label for="showCodeButton">&nbsp;</label></button>
+        </div>
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id="some-q-amp-as">Some Q&amp;As</h1>
+
+<p><em>The HA functionality was removed from the CE edition of CFC between versions 1.1 and 1.2.<br>
+We were using this functionality with version 1.1 and would like to continue to use it. 
+Will the HA functionality be part of the CE edition in the future or will it be made available separately?</em></p>
+
+<p>No, that&rsquo;s the difference between the CE and the Enterprise (paid) edition: the EE provides the capability of having multiple Kubernetes masters</p>
+
+<hr>
+
+<p><em>Is it possible to reduce the price of a license in version 1.2 by restricting its scope to just the Kubernetes functionality (Calico, Helm, Nginx etc.)?</em></p>
+
+<p>The ICp price is being re-evaluated, with different pricing options that will include some license for IBM contents.</p>
+
+<p>For now, the ICp 1.2 pricing for the basic Kubernetes functionality, and the IBM content is priced separately.</p>
+
+<hr>
+
+<p><em>Is it possible to reduce the price of IBM Cloud private by using it without Bluemix products and ecosystem?</em></p>
+
+<p>Again, the price for the platform, not for IBM contents.</p>
+
+<hr>
+
+<p><em>Is it possible with CFC version 1.1 to update referenced products (Ansible, Calico, etcd, Heapster, Helm, Keystone, kube-dns) via Docker Update or do we need version 1.2 for this?</em></p>
+
+<p>I don&rsquo;t know about CFC version 1.1</p>
+
+<hr>
+
+<p><em>We’re running CFC version 1.1 on a CPU pool for which we have WebSphere ND b for each cluster we’re running or will one VPC license cover any number of clusters?</em></p>
+
+<p>I don&rsquo;t know about CFC v1.1</p>
+
+<hr>
+
+<p><em>Is there a way to use CFC CE version 1.1 in a production environment without incurring license costs e.g. without S&amp;S?</em></p>
+
+<p>I am not familiar with the CFC CE v1.1 capability, but the questions I would have are  </p>
+
+<ul>
+<li>does it provide the capability of having multiple Kubernetes master?</li>
+<li>does the client need support for the platform?</li>
+</ul>
+
+<hr>
+
+<p><em>https://www.ibm.com/support/knowledgecenter/SSBS6K_1.2.0/getting_started/whats_new.html IBM Cloud private-ce provides a free, limited offering that is ideal for test environments. What are the exact limitations of this “limited offering”?  Can it also be used free in a production environment?</em></p>
+
+<ul>
+<li><p>The CE edition limits the deployment to a single Kubernetes master, incurring to having a Single Point of Failure. If any client needs to run in production, he would want to have multiple masters, which requires the Enterprise Edition</p></li>
+<li><p>The CE version doesn&rsquo;t provide <em>any</em> support.</p></li>
+</ul>
+
+<hr>
+
+<p><em>Can IBM confirm that the internal Kubernetes network (Master-Node/Worker-Node/Proxy-Node) is not visible to external systems? i.e. The IP addresses in the `service</em>cluster_ip_range<code class="prettyprint">and</code>network_cidr` of a Calico network are only visible from within the Kubernetes network._</p>
+
+<p>This is true only if BGP has not been configured</p>
+
+<p>The <code class="prettyprint">service_cluster_ip_range</code> is always internal only</p>
+
+<p>The <code class="prettyprint">network_cidr</code>, though, can be accessible from the world if BGP has been configured between the enterprise network and the calico node</p>
+
+<hr>
+
+<p><em>We followed the CFC installation instructions to install the HA functionality but we’re missing usage instructions. Could you send us the documentation (or a link to it) detailing exactly how the HA functionality works and how to use it.</em></p>
+
+<p>TBD</p>
+
+<hr>
+
+<p><em>Please provide (a link to) the documentation for the configuration of (nginx) sticky sessions (cookie based) in CFC.</em></p>
+
+<p>It is the same as any nginx session persistence configuration, documented at <a href="https://www.nginx.com/products/session-persistence/">nginx Session Persistence</a></p>
+
+<hr>
+
+<p><em>Is CF going to be available? When?</em>
+Cloud Foundry will be available in an un-tethered (unmanaged), product form factor in our Oct release. </p>
+
+<hr>
+
+<p><em>Will the CF versions be aligned with the dedicated/Public ones or will have a complete separate life?</em>
+The components of the CF installation will be aligned with dedicated and public, as they are today. The installation, update, service monitoring will be the responsibility of the client (aligning with other market competitors).</p>
+
+<hr>
+
+<p><em>What is the difference between NSX and NSX-V?</em></p>
+
+<p>NSX-V is the NSX version for vSphere that directly integrates with vCenter. </p>
+
+<hr>
+
+<p>Is ICp going to be compatible with NSX (that is, can we install it on top of VMWare/NSX?)? When?</p>
+
+<p>ICp 1.2 can be installed on top of NSX-V today (toleration). There is an ongoing collaboration with VMWare to support deeper integration with the upcoming NSX-T (focused on flat networks for containers and VMs). That support will be available shortly after the release of the NSX-T product. </p>
+
+<p>Presumably the above implies that VXLANs in NSX are tolerated by ICP.</p>
+
+<hr>
+
+<p><em>Is CF within ICP going to be compatible with NSX (that is can we install it on top VMWare/NSX)? Will CF tolerate the use of VXLANs, we have heard rumours that this could cause issues.</em></p>
+
+<p>VXLANs are invisible at ICP level. Calico works at the layer 3 while VXLAN works on layer 2. How is this going to affect the platform, presumably it does not?</p>
+
+<hr>
+
+<p><em>Do we need to provision just one big VM, several?-if one, can we make use of different IP’s on different networks at ICp level (assuming yes)?</em></p>
+
+<hr>
+
+<p><em>What is the recommended size of a VM underpinning an ICP worker node?</em>
+According to this, the minimum is 1 virtual CPU. https://www.ibm.com/support/knowledgecenter/en/SSBS6K_1.2.0/supported_system_config/hardware_reqs.html &ldquo;Choose a modern processor with multiple cores. Common clusters use 2 - 8 core machines. When it comes to choosing between faster CPUs or more cores, it is recommended to choose hosts with more cores.&rdquo;</p>
+
+<p>According to this, the minimum is 4 GB RAM. https://www.ibm.com/support/knowledgecenter/en/SSBS6K_1.2.0/supported_system_config/hardware_reqs.html Should we not have more RAM when more CPUs are associated with the worker node VMs?</p>
+
+<hr>
+
+<p><em>If many, could those VMs be on a different network (externally facing VXLAN)</em>
+Presumably yes, we need a diagram before we can answer this.</p>
+
+<hr>
+
+<p><em>If yes, does calico allows communication between them while VXLANs are not allowed to talk between them (assuming yes)?</em></p>
+
+<p>Question needs clarification.</p>
+
+<hr>
+
+<p><em>Is ICp going to levarage NSX for network segmentation in CF? When?</em>
+There are no plans today to take advantage of NSX to support micro-segmentation of application workloads.</p>
+
+<hr>
+
+<p><em>Can we still provide segmentation using calico at the OS level for CF?</em>
+No, segmentation is done through this: https://docs.cloudfoundry.org/adminguide/routing-is.html</p>
+
+<hr>
+
+<p><em>Can we provide network segmentation for CF through other means?</em></p>
+
+<p>Josh Packer confirmed that this is supported through the use of port groups. We need a diagram to clarify exactly how this works.</p>
+
+<hr>
+
+<p><em>Can we have (is it supported) multiple CF instances in one single ICp instance (installation)?</em></p>
+
+<hr>
+
+<p><em>Is ICp going to leverage NSX-T for network segmentation in K8? When?</em>
+Collaboration is underway to integrate directly with NSX-T to manage the underlying networking layer from k8. That support will be available shortly after the release of the NSX-T product.</p>
+
+<p>This is good news, as confirmed on today&rsquo;s call this is in plan for delivery in our  Oct release.</p>
+
+<hr>
+
+<p><em>Is Mesos going to be available in the future? When?</em>
+No, we have removed support for the Mesos orchestration layer from the product in order to focus completely on k8 as the distributed system orchestration. </p>
+
+<hr>
+
+<p><em>Can we guarantee that all CF and K8 APIs will be accessible from day1 now and in the future? (This is extremely important since we&rsquo;ve been using the fact that OpenShift does not do it as one of the main reasons to step away from it).</em>
+Yes. We already expose all CF API, and we are following the same open strategy with kubernetes API as well. We will likely have additional API around services like user on boarding, certificate management, etc that appends additional new function; but we are not constricting the kubernetes API in anyway.</p>
+
+<p>This is again good news!</p>
+
+<hr>
+
+<p><em>What out of the box services will be available in October? The ones in the right hand side of the below picture? Does it mean they come with the platform? Node-Red not suppported?</em>
+The list of content planned for Oct includes: </p>
+
+<ul>
+<li>DSX</li>
+<li>Db2 Warehouse (formerly dashDB)</li>
+<li>Message Hub•API Connect  </li>
+<li>Redis </li>
+<li>Qradar Deployment / Integration </li>
+<li>IBM Integration Broker (IIB)</li>
+<li>Node.js </li>
+<li>GoLang</li>
+<li>Liberty</li>
+<li>API access to Object Store </li>
+<li>Cloudant</li>
+<li>Redis</li>
+<li>MongoDB</li>
+<li>Elasticsearch</li>
+<li>Cloud Foundry</li>
+</ul>
+
+<p>Open source runtimes will be included and supported on a best-effort basis. IBM products will still be licensed, but there is work under way to provide usage based pricing. These workloads will be entitled to full enterprise support as they always have. </p>
+
+<hr>
+
+<p><em>What level of scalability will the platform be able to support for K8? (1K containers? 10K? 100K?). Same for CF.</em>
+We have tested 2K pods (which equated to 2K containers) running across 300 nodes (on x86_64) and also 60 nodes on Power. Kubernetes officially supports up to 1K nodes (3x larger than our tested range).
+I believe on today&rsquo;s call, you suggested that we intend to test with 1K nodes to run 10K containers for our Oct release, we need confirmation however.
+We should keep in mind that Santander claims to have 12k containers running on their OpenStack/OpenShift platform today, so it would be great to be able to point to a number &gt; 2K.</p>
+
+<hr>
+
+<p><em>Will we support Network Policies in ICP right as in https://kubernetes.io/docs/concepts/services-networking/network-policies/?</em>
+Yes, Network Policies are supported today: https://www.ibm.com/support/knowledgecenter/en/SSBS6K_1.2.0/manage_network/set_network_policy.html</p>
+
+<hr>
+
+<p><em>Will the RBAC (role-based access control) solution in the Oct release be enhanced compared to the two roles (admin and developer) available in ICP 1.2 today</em></p>
+
+<hr>
+
+<p><em>We believe that ICP today (1.2) supports multi-tenancy, however there is only support for a single admin user. This limits multi-tenancy for clients in the field, can you confirm that this is the case. And what should we expect fog ICP 2.1 (Oct)?</em></p>
+
+<hr>
+
+<p><em>Is user management in ICP separate from CF, or do we use the same authentication manager/keystone?</em></p>
+
+<hr>
+
+<p><em>Assuming we have consolidated user management for ICP and CF, how do we support multi-tenancy in CF? Presumably this is done through CF organisations.</em></p>
+
+<hr>
+
+<p><em>Does ICP support the use of multiple LDAPs within a single ICP instance (cluster)? This would be required for some multi-tenancy scenarios with service providers. And if not, do we provide explicit support for integration with Tivoli Directory Integrator?</em></p>
+
+<hr>
+
+<p><em>Can we have multiple VIP addresses for the proxy nodes on different VLAN / IP ranges?</em>
+We support multiple VIP addresses by having multiple proxy nodes, each with its own VIP. This would require manual configuration though since the default installation does not facilitate this. We need confirmation as well as documentation for this.</p>
+
+<p>In addition there is an outstanding question whether a single proxy node can support multiple VIPs.</p>
+
+<hr>
+
+<p><em>Can I have the same boot node for multiple ICp installations? This might simplify the deployment in the field.</em></p>
+
+      </div>
+      <div class="dark-box">
+          <div class="lang-selector">
+                <a href="#" data-language-name="javascript">Node</a>
+                <a href="#" data-language-name="java">Java</a>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>

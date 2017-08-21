@@ -88,3 +88,13 @@
 [2017-08-21 08:58:20 -0300 Eduardos-MacBook-Pro.local (36623)] INFO : Installing Net instrumentation
 [2017-08-21 08:58:20 -0300 Eduardos-MacBook-Pro.local (36623)] INFO : Finished instrumentation
 [2017-08-21 08:58:29 -0300 Eduardos-MacBook-Pro.local (36623)] INFO : Starting Agent shutdown
+[2017-08-21 09:43:43 -0300 Eduardos-MacBook-Pro.local (37586)] INFO : Starting the New Relic agent in "development" environment.
+[2017-08-21 09:43:43 -0300 Eduardos-MacBook-Pro.local (37586)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-08-21 09:43:43 -0300 Eduardos-MacBook-Pro.local (37586)] INFO : Reading configuration from config/newrelic.yml (/Users/edu/github/ICpQA)
+[2017-08-21 09:43:43 -0300 Eduardos-MacBook-Pro.local (37586)] INFO : Environment: development
+[2017-08-21 09:43:43 -0300 Eduardos-MacBook-Pro.local (37586)] INFO : No known dispatcher detected.
+[2017-08-21 09:43:43 -0300 Eduardos-MacBook-Pro.local (37586)] INFO : Application: My Application (Development)
+[2017-08-21 09:43:43 -0300 Eduardos-MacBook-Pro.local (37586)] INFO : Installing Net instrumentation
+[2017-08-21 09:43:43 -0300 Eduardos-MacBook-Pro.local (37586)] INFO : Finished instrumentation
+[2017-08-21 09:43:46 -0300 Eduardos-MacBook-Pro.local (37586)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1577165/applications/38115687
+[2017-08-21 09:43:52 -0300 Eduardos-MacBook-Pro.local (37586)] INFO : Starting Agent shutdown
